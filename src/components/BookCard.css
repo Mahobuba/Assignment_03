@@ -1,0 +1,61 @@
+/* BookCard.css */
+
+.book-card {
+    background-color: #fff; /* Card background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align text */
+    margin: 16px; /* Margin around the card */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.book-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.img-card {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded image corners */
+}
+
+.book-title {
+    font-weight: bold; /* Bold title */
+    margin: 8px 0; /* Margin for spacing */
+}
+
+.book-author, .book-category, .book-rating {
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin: 4px 0; /* Margin for spacing */
+}
+
+.details-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    padding: 8px 12px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.details-button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .book-card {
+        margin: 16px; /* Maintain margin for medium devices */
+        width: calc(33.333% - 32px); /* 3 cards per row */
+        display: inline-block; /* Allow cards to sit next to each other */
+    }
+}
+
+@media (min-width: 1024px) {
+    .book-card {
+        width: calc(25% - 32px); /* 4 cards per row for larger screens */
+    }
+}

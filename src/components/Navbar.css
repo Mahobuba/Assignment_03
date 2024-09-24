@@ -1,0 +1,73 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a4a4a; /* Adjust color as needed */
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between nav items */
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #6b6b6b; /* Hover color */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+.nav-btn {
+  background-color: #ff5722; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #e64a19; /* Button hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      width: 100%; /* Full width on small devices */
+  }
+
+  .nav-item, .nav-btn {
+      width: 100%; /* Full width buttons and items */
+      text-align: center;
+  }
+}
+
+  

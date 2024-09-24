@@ -1,0 +1,68 @@
+/* Banner.css */
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.banner-text {
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 2em; /* Responsive text size */
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.banner-button {
+  margin-top: 1em;
+  background-color: #007bff; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.banner-button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.banner-image img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .banner-container {
+      flex-direction: row; /* Horizontal layout on medium and large screens */
+      justify-content: space-between;
+  }
+
+  .banner-text {
+      text-align: left; /* Align text left */
+  }
+
+  .banner-title {
+      font-size: 2.5em; /* Larger title for bigger screens */
+  }
+
+  .banner-button {
+      padding: 12px 24px; /* Slightly larger button on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-title {
+      font-size: 3em; /* Even larger title for extra-large screens */
+  }
+}
+
+  

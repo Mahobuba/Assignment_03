@@ -1,0 +1,54 @@
+/* Footer.css */
+
+.fancy-footer {
+  background-color: #2D3748; /* Dark background color */
+  color: #F7FAFC; /* Light text color */
+  padding: 20px; /* Padding for the footer */
+  font-family: Arial, sans-serif; /* Font style */
+}
+
+.footer-container {
+  display: flex; /* Flex layout for columns */
+  flex-wrap: wrap; /* Allow columns to wrap */
+  justify-content: space-between; /* Space between columns */
+}
+
+.footer-column {
+  flex: 1; /* Flex-grow for each column */
+  min-width: 200px; /* Minimum width for columns */
+  margin: 10px; /* Margin for spacing */
+}
+
+.footer-column h3 {
+  font-size: 1.2rem; /* Font size for headings */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.footer-column a {
+  display: block; /* Block display for links */
+  color: #F7FAFC; /* Link color */
+  margin: 5px 0; /* Margin between links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-column a:hover {
+  color: #BEE3F8; /* Light color on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center align text */
+  margin-top: 20px; /* Space above bottom text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack columns vertically on small devices */
+      align-items: center; /* Center align items */
+  }
+}
+
+
+
+  

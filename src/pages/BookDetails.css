@@ -1,0 +1,73 @@
+/* BookDetails.css */
+
+.book-details-container {
+    display: flex; /* Flex layout for responsiveness */
+    flex-direction: column; /* Default to column for small devices */
+    padding: 16px; /* Padding for the container */
+}
+
+.book-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 16px; /* Space between image and text */
+}
+
+.book-info {
+    margin-left: 0; /* Reset margin for small devices */
+}
+
+.book-title {
+    font-size: 2rem; /* Large title font size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 8px; /* Space below title */
+}
+
+.btn-wishlist, .btn-cart {
+    padding: 10px 16px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 8px; /* Space above buttons */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.btn-wishlist {
+    background-color: #fbbf24; /* Yellow background */
+    color: white; /* Text color */
+}
+
+.btn-cart {
+    background-color: #34d399; /* Green background */
+    color: white; /* Text color */
+    margin-left: 8px; /* Space between buttons */
+}
+
+.btn-wishlist:hover {
+    background-color: #eab308; /* Darker yellow on hover */
+}
+
+.btn-cart:hover {
+    background-color: #059669; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .book-details-container {
+        flex-direction: row; /* Switch to row layout on medium devices */
+    }
+
+    .book-image {
+        width: 50%; /* Half width for medium devices */
+        margin-right: 16px; /* Space between image and text */
+    }
+
+    .book-info {
+        margin-left: 0; /* Ensure margin is correct for medium devices */
+    }
+}
+
+@media (min-width: 1024px) {
+    .book-title {
+        font-size: 2.5rem; /* Larger title for large devices */
+    }
+}

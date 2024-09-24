@@ -1,0 +1,38 @@
+/* NotFound.css */
+
+.not-found-container {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+    background-color: #f8fafc; /* Light background color */
+    color: #2d3748; /* Dark text color */
+}
+
+.title {
+    font-size: 2rem; /* Base font size for large devices */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Responsive Styles */
+.not-found-image {
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for medium and small devices */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem; /* Smaller font size for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.25rem; /* Even smaller font size for very small devices */
+    }
+}
